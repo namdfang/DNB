@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="./assets/css/contact.css">
+    <title>Account</title>
+    <link rel="stylesheet" href="./assets/css/account.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -29,48 +30,55 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="./products.html">Products</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a class="active" href="./contact.html">Contact</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </li>
                 </ul>
             </nav>
-            <a href="./account.html"><span class="icon-header icon-user"></span></a>
+            <a href="./account.html"><span class="icon-header icon-user active"></span></a>
             <a href="./cart.html"><span class="icon-header icon-cart"></span></a>
                 <img src="./assets/images/menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
         </div>
-        <div class="row" style="margin-top: 0;">
-            <div class="img-contact-header">
-                <p>Contact</p>
+    </div>
+
+    <!---------- account page ------------>
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="./assets/images/product-detail-01-remove-bg.png" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+
+                        <form id="RegForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="email">
+                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Confirm Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="main-contact">
-        <div class="send-message item">
-            <p>Send Us A Message</p>
-            <input type="email" class="email" placeholder="Your Email Address">
-            <input type="text" class="question" placeholder="Hou Can We Help?">
-            <button class="btn-submit">SUBMIT</button>
-        </div>
-        <ul class="info-contact item">
-            <li class="address item-info">
-                <p>Address</p>
-                <div>Coza Store Center 8th floor, 379 Hudson St, New York, NY 10018 US</div>
-            </li>
-
-            <li class="phone item-info">
-                <p>Lets Talk</p>
-                <div class="blue">+1 800 1236879</div>
-            </li>
-
-            <li class="support item-info">
-                <p>Sale Support</p>
-                <div class="blue">contact@example.com</div>
-            </li>
-        </ul>
-    </div>
-
-    <div class="map-address"></div>
+    <!---------- footer ------------>
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -114,6 +122,8 @@
         </div>
     </div>
 
+    <!------------ js for toggle menu -------------->
+
     <script>
         var MenuItems = document.getElementById("MenuItems");
 
@@ -130,6 +140,29 @@
                 }
         }
     </script>
+
+    <!------------ js for toggle form -------------->
     
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator")
+
+        LoginForm.style.transform = "translateX(-350px)"
+
+        function register() {
+            LoginForm.style.transform = "translateX(-350px)";
+            RegForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+
+        function login() {
+            RegForm.style.transform = "translateX(350px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+
+    </script>
+
 </body>
 </html>

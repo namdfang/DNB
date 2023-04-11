@@ -124,24 +124,6 @@ a {
     margin-right: 15px;
 }
 
-
-#form-login-container {
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: none;
-}
-
-#form-login-container.open {
-    display: flex;
-}
-
 p{
     color: #555;
 }
@@ -338,20 +320,11 @@ li.user-icon:hover {
     margin-right: 16px;
 }
 
-.icon-header.icon-user.active {
-    background-image: url('../fonts/themify-icons/SVG/user1hover.svg');
-    margin-right: 16px;
-}
-
 .icon-header.icon-cart {
     background-image: url('../fonts/themify-icons/SVG/cart1.svg');
 }
 
 .icon-header.icon-cart:hover {
-    background-image: url('../fonts/themify-icons/SVG/cart1hover.svg');
-}
-
-.icon-header.icon-cart.active {
     background-image: url('../fonts/themify-icons/SVG/cart1hover.svg');
 }
 /* 
@@ -374,83 +347,6 @@ li.user-icon:hover {
     display: none;
     margin-top: 10px;
     border-bottom-color:#f44336
-}
-
-
-/* -------- offer ---------- */
-
-.offer {
-    background: radial-gradient(#fff,#ffd6d6);
-    margin-top: 80px;
-    padding: 30px 0;
-}
-
-.col-2 .offer-img {
-    padding: 50px;  
-}
-
-small {
-    color: #555;
-}
-
-/* -------- testimonial ---------- */
-
-.testimonial {
-    padding-top: 100px;
-}
-
-.testimonial .col-3 {
-    text-align: center;
-    padding: 40px 20px;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.5s;
-}
-
-.testimonial .col-3 img {
-    width: 50px;
-    margin-top: 20px;
-    border-radius: 50%;
-}
-
-.testimonial .col-3:hover {
-    transform: translateY(-20px);
-}
-
-.fa.fa-quote-left {
-    font-size: 34px;
-    color: #ff523b;
-}
-
-.col-3 p {
-    font-size: 12px;
-    margin: 12px 0;
-    color: #777;
-}
-
-.testimonial .col-3 h3 {
-    font-weight: 600;
-    color: #555;
-    font-size: 16px;
-}
-
-/* ---------- brands ------------ */
-.brands {
-    margin: 100px auto;
-}
-
-.col-5 {
-    width: 160px;
-}
-
-.col-5 img {
-    width: 100%;
-    cursor: pointer;
-    filter: grayscale(100%);
-}
-
-.col-5 img:hover {
-    filter: grayscale(0);
 }
 
 /* ---------- footer ------------ */

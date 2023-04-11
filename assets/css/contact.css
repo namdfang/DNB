@@ -1,0 +1,122 @@
+.img-contact-header {
+    width: 100%;
+    overflow: hidden;
+    background-image: url('../images/contact.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 240px;
+    position: relative;
+}
+
+.img-contact-header p{
+    position: absolute;
+    font-size: 50px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    top: 40%;
+    transform: translate(-50%);
+    transform: translate(-50%);
+    left: 50%;
+}
+
+.main-contact {
+    display: flex;
+    padding: 104px 40px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.main-contact .item{
+    flex: 1;
+    border: 1px solid #e6e6e6;
+}
+
+.main-contact .send-message{
+    padding: 70px;
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-contact .send-message p {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
+}
+
+.main-contact .send-message .email {
+    font-size: 13px;
+    line-height: 1.6923;
+    color: #333;
+    border: 1px solid #e6e6e6;
+    padding: 12px 0 12px 20px;
+}
+
+.main-contact .send-message .question {
+    font-size: 13px;
+    line-height: 1.6923;
+    color: #333;
+    border: 1px solid #e6e6e6;
+    padding: 25px;
+    padding-bottom: 140px;
+}
+
+.main-contact .send-message button {
+    border: none;
+    background: #ff523b;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.main-contact .info-contact{
+    padding: 30px 93px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.main-contact .info-contact .item-info p {
+    font-size: 18px;
+    line-height: 1.222222;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.main-contact .info-contact .item-info .blue {
+    color: #717fe0;
+}
+
+.map-address {
+    background-image: url('../images/map.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 300px;
+    position: relative;
+}
+
+@media only screen and (max-width: 500px) {
+    .main-contact {
+        padding: 40px 16px;
+    }
+
+    .main-contact .item {
+        padding: 40px 16px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .main-contact {
+        flex-direction: column;
+    }
+}

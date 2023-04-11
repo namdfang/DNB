@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="./assets/css/contact.css">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./assets/css/checkout.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -29,48 +30,87 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="./products.html">Products</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a class="active" href="./contact.html">Contact</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </li>
                 </ul>
             </nav>
             <a href="./account.html"><span class="icon-header icon-user"></span></a>
-            <a href="./cart.html"><span class="icon-header icon-cart"></span></a>
+            <a href="./cart.html"><span class="icon-header icon-cart active"></span></a>
                 <img src="./assets/images/menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
         </div>
-        <div class="row" style="margin-top: 0;">
-            <div class="img-contact-header">
-                <p>Contact</p>
+    </div>
+
+    <div class="checkout-container">
+        <div class="checkout-address">
+            <div class="checkout-tittle">DELIVERY ADDRESS</div>
+            <div class="form-info">
+                <div class="d-flex-col">
+                    <label for="">Full Name<span>*</span></label>
+                    <input type="text" placeholder="fullname">
+                </div>
+                <div class="col-2">
+                    <div class="d-flex-col">
+                        <label for="">Phone Number <span>*</span></label>
+                        <input type="text" placeholder="phonenumber">
+                    </div>
+                    <div class="d-flex-col">
+                        <label for="">Email <span>*</span></label>
+                        <input type="text" placeholder="email">
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div class="d-flex-col">
+                        <label for="">Country <span>*</span></label>
+                        <input type="text" placeholder="country">
+                    </div>
+                    <div class="d-flex-col">
+                        <label for="">State/Country <span>*</span></label>
+                        <input type="text" placeholder="state/country">
+                    </div>
+                </div>
+
+                <div class="d-flex-col" style="margin-bottom: 0;">
+                    <label for="">Address <span>*</span></label>
+                    <input type="text" placeholder="address">
+                </div>
+            </div>
+        </div>
+        <div class="checkout-order">
+            <div class="checkout-tittle">YOUR ORDER</div>
+            <div class="d-flex-item fw-bold">
+                <span >Products</span>
+                <span>Total</span>
+            </div>
+            <div class="d-flex-item">
+                <div>
+                    <div>
+                        <span><span class="fw-bold">Fresh Strawberries</span> X 2</span>
+                        <div class="size">Size: XL</div>
+                    </div>
+                </div>
+                <span>$36.00</span>
+            </div>
+            <div class="d-flex-item">
+                <span class="fw-bold">Sub total</span>
+                <span>$72.000</span>
+            </div>
+            <div class="d-flex-item">
+                <span class="fw-bold">Tax</span>
+                <span>$8.000</span>
+            </div>
+            <div class="d-flex-item">
+                <span class="fw-bold">Total</span>
+                <span class="fw-bold">$80.000</span>
+            </div>
+            <div style="text-align: right;">
+                <a href="#" class="btn" style="margin: 0;">Pay</a>
             </div>
         </div>
     </div>
 
-    <div class="main-contact">
-        <div class="send-message item">
-            <p>Send Us A Message</p>
-            <input type="email" class="email" placeholder="Your Email Address">
-            <input type="text" class="question" placeholder="Hou Can We Help?">
-            <button class="btn-submit">SUBMIT</button>
-        </div>
-        <ul class="info-contact item">
-            <li class="address item-info">
-                <p>Address</p>
-                <div>Coza Store Center 8th floor, 379 Hudson St, New York, NY 10018 US</div>
-            </li>
-
-            <li class="phone item-info">
-                <p>Lets Talk</p>
-                <div class="blue">+1 800 1236879</div>
-            </li>
-
-            <li class="support item-info">
-                <p>Sale Support</p>
-                <div class="blue">contact@example.com</div>
-            </li>
-        </ul>
-    </div>
-
-    <div class="map-address"></div>
+    <!---------- footer ------------>
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -114,6 +154,8 @@
         </div>
     </div>
 
+    <!------------ js for toggle menu -------------->
+
     <script>
         var MenuItems = document.getElementById("MenuItems");
 
@@ -130,6 +172,6 @@
                 }
         }
     </script>
-    
+
 </body>
 </html>

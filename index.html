@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/68b112eaae.js"></script>
@@ -17,21 +18,28 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <a href="index.html"><img src="./assets/images/logo.png" width="125px"></a>
-                    <div class="box-search"><input class="input-search" type="text">
+                    <a class="text-logo" href="./index.html">
+                        <span class="name">BCC</span>
+                        <span class="store">STORE</span>
+                    </a>
+                    <div class="box-search"><input placeholder="Tìm kiếm sản phẩm" class="input-search" type="text">
                     <img src="./assets/images/search.png" alt=""></div>
                 </div>
                 <nav>
                     <ul id="MenuItems">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Products</a></li>
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="./products.html">Products</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="./contact.html">Contact</a></li>
-                        <li class="user-icon"><a href=""><img src="./assets/images/user.png" width="28px" height="28px"></a>
-                        </li>
-                    </ul>
-                </nav>
-                <a href="#"><img src="./assets/images/cart.png" width="30px" height="30px"></a>
+                    </li>
+                </ul>
+            </nav>
+                <a href="./account.html">
+                    <span class="icon-header icon-user"></span>
+                </a>
+                <a href="./cart.html">
+                    <span class="icon-header icon-cart"></span>
+                </a>
                 <img src="./assets/images/menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
             <div class="row">
@@ -63,8 +71,8 @@
         <h2 class="title">Featured Products</h2>
         <div class="row">
             <div class="col-4">
-                <a href=""><img src="./assets/images/product-01.jpg" alt=""></a>
-                <a href=""><h4>Esprit Ruffle Shirt</h4></a>
+                <a href="./product-details.html"><img src="./assets/images/product-01.jpg" alt=""></a>
+                <a href="./product-details.html"><h4>Esprit Ruffle Shirt</h4></a>
                 <div class="rating">    
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -75,8 +83,12 @@
                 <p>$16.64</p>
             </div>
             <div class="col-4">
-                <img src="./assets/images/product-02.jpg" alt="">
-                <h4>Herschel supply</h4>
+                <a href="./product-details.html">
+                    <img src="./assets/images/product-02.jpg" alt="">
+                </a>
+                <a href="./product-details.html">
+                    <h4>Herschel supply</h4>
+                </a>
                 <div class="rating">    
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -87,7 +99,9 @@
                 <p>$35.31</p>
             </div>
             <div class="col-4">
-                <img src="./assets/images/product-03.jpg" alt="">
+                <a href="./product-details.html">
+                    <img src="./assets/images/product-03.jpg" alt="">
+                </a>
                 <h4>Only Check Trouser</h4>
                 <div class="rating">    
                     <i class="fa fa-star"></i>
@@ -99,7 +113,9 @@
                 <p>$25.50</p>
             </div>
             <div class="col-4">
-                <img src="./assets/images/product-04.jpg" alt="">
+                <a href="./product-details.html">
+                    <img src="./assets/images/product-04.jpg" alt="">
+                </a>
                 <h4>Classic Trench Coat</h4>
                 <div class="rating">    
                     <i class="fa fa-star"></i>
@@ -114,7 +130,9 @@
         <h2 class="title">Latest Products</h2>
         <div class="row">
             <div class="col-4">
-                <img src="./assets/images/product-05.jpg" alt="">
+                <a href="./product-details.html">
+                    <img src="./assets/images/product-05.jpg" alt="">
+                </a>
                 <h4>Front Pocket Jumper</h4>
                 <div class="rating">    
                     <i class="fa fa-star"></i>
@@ -126,7 +144,9 @@
                 <p>$34.75</p>
             </div>
             <div class="col-4">
-                <img src="./assets/images/product-06.jpg" alt="">
+                <a href="./product-details.html">
+                    <img src="./assets/images/product-06.jpg" alt="">
+                </a>
                 <h4>Vintage Inspired Classic</h4>
                 <div class="rating">    
                     <i class="fa fa-star"></i>
@@ -138,7 +158,9 @@
                 <p>$93.20</p>
             </div>
             <div class="col-4">
-                <img src="./assets/images/product-07.jpg" alt="">
+                <a href="./product-details.html">
+                    <img src="./assets/images/product-07.jpg" alt="">
+                </a>
                 <h4>Shirt in Stretch Cotton</h4>
                 <div class="rating">    
                     <i class="fa fa-star"></i>
@@ -150,7 +172,9 @@
                 <p>$52.66</p>
             </div>
             <div class="col-4">
-                <img src="./assets/images/product-08.jpg" alt="">
+                <a href="./product-details.html">
+                    <img src="./assets/images/product-08.jpg" alt="">
+                </a>
                 <h4>Pieces Metallic Printed</h4>
                 <div class="rating">    
                     <i class="fa fa-star"></i>
@@ -164,7 +188,9 @@
         </div>
         <div class="row">
             <div class="col-4">
-                <img src="./assets/images/product-09.jpg" alt="">
+                <a href="./product-details.html">
+                    <img src="./assets/images/product-09.jpg" alt="">
+                </a>
                 <h4>Converse All Star Hi Plimsolls</h4>
                 <div class="rating">    
                     <i class="fa fa-star"></i>
@@ -176,7 +202,9 @@
                 <p>$75.00</p>
             </div>
             <div class="col-4">
-                <img src="./assets/images/product-10 (1).jpg" alt="">
+                <a href="./product-details.html">
+                    <img src="./assets/images/product-10 (1).jpg" alt="">
+                </a>
                 <h4>Femme T-Shirt In Stripe</h4>
                 <div class="rating">    
                     <i class="fa fa-star"></i>
@@ -188,7 +216,9 @@
                 <p>$28.85</p>
             </div>
             <div class="col-4">
-                <img src="./assets/images/product-13.jpg" alt="">
+                <a href="./product-details.html">
+                    <img src="./assets/images/product-13.jpg" alt="">
+                </a>
                 <h4>Herschel supply</h4>
                 <div class="rating">    
                     <i class="fa fa-star"></i>
@@ -200,7 +230,9 @@
                 <p>$63.16</p>
             </div>
             <div class="col-4">
-                <img src="./assets/images/product-14.jpg" alt="">
+                <a href="./product-details.html">
+                    <img src="./assets/images/product-14.jpg" alt="">
+                </a>
                 <h4>Pretty Little Thing</h4>
                 <div class="rating">    
                     <i class="fa fa-star"></i>
@@ -227,12 +259,16 @@
                     </div>
                 </div>
                 <div class="footer-col-2">
-                    <img src="./assets/images/logo-white.png" alt="">
-                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of fashion Accessible to the Many.</p>
+                    <!-- <img src="./assets/images/logo-white.png" alt=""> -->
+                    <a class="text-logo logo-footer" href="./index.html">
+                        <span class="name">BCC</span>
+                        <span class="store-footer">STORE</span>
+                    </a>
+                    <p style="margin-top: 16px;">Our Purpose Is To Sustainably Make the Pleasure and Benefits of fashion Accessible to the Many.</p>
                 </div>
                 <div class="footer-col-3">
                     <h3>Useful Links</h3>
-                    <ul>
+                    <ul style="width: 100px; margin: 0 auto; text-align: left;">
                         <li>Coupons</li>
                         <li>Blog Post</li>
                         <li>Return Policy</li>
@@ -241,7 +277,7 @@
                 </div>
                 <div class="footer-col-4">
                     <h3>Follow us</h3>
-                    <ul>
+                    <ul style="width: 80px; margin: 0 auto; text-align: left;">
                         <li>Facebook</li>
                         <li>Twitter</li>
                         <li>Instagram</li>
@@ -255,7 +291,6 @@
     </div>
 
     <!------------ js for toggle menu -------------->
-
     <script>
         var MenuItems = document.getElementById("MenuItems");
 
