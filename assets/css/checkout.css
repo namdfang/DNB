@@ -49,6 +49,13 @@
 
 .form-info input{
     padding: 10px 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+}
+
+.form-info input:focus{
+    border: 1px solid #ff523b;
+    outline: none;
 }
 
 .form-info span {
